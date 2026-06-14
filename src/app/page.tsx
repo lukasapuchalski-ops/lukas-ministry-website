@@ -15,20 +15,34 @@ export default function Home() {
       {/* NAVBAR */}
 
 <header className="fixed top-0 z-50 w-full border-b border-white/10 bg-black/70 backdrop-blur">
-  <div className="flex w-full items-center justify-between px-16 py-5">
+  <div className="flex w-full items-center justify-between px-5 py-4 md:px-16 md:py-5">
 
-    <h2 className="text-2xl tracking-[0.2em]">
-      <span className="text-amber-400">LUKAS</span> PUCHALSKI
+    <h2
+      className={`${cormorant.className} text-lg md:text-2xl tracking-[0.15em] md:tracking-[0.2em]`}
+    >
+      <span className="text-amber-400">LUKAS</span>{" "}
+      <span className="text-white">PUCHALSKI</span>
     </h2>
 
     <nav className="hidden gap-8 text-sm uppercase tracking-widest md:flex">
-      <a href="#about">About</a>
-      <a href="#story">Story</a>
-      <a href="#mission">Mission</a>
-      <a href="#contact">Contact</a>
+      <a href="#about" className="transition hover:text-amber-400">
+        About
+      </a>
+
+      <a href="#story" className="transition hover:text-amber-400">
+        Story
+      </a>
+
+      <a href="#mission" className="transition hover:text-amber-400">
+        Mission
+      </a>
+
+      <a href="#contact" className="transition hover:text-amber-400">
+        Contact
+      </a>
     </nav>
 
-    <button className="rounded-lg bg-amber-500 px-5 py-3 font-semibold text-black">
+    <button className="rounded-xl bg-amber-500 px-4 py-2 text-sm font-semibold text-black transition hover:bg-amber-400 md:px-6 md:py-3 md:text-base">
       Invite Lukas
     </button>
 
@@ -36,7 +50,7 @@ export default function Home() {
 </header>
  {/* HERO */}
 
-<section className="relative min-h-screen overflow-hidden">
+<section className="relative min-h-[85vh] overflow-hidden md:min-h-screen">
 
   <video
     autoPlay
@@ -54,49 +68,49 @@ export default function Home() {
     initial={{ opacity: 0, y: 120 }}
     animate={{ opacity: 1, y: 0 }}
     transition={{ duration: 1.4 }}
-    className="relative z-10 mx-auto flex min-h-screen max-w-6xl items-center justify-center px-8"
+    className="relative z-10 mx-auto flex min-h-[85vh] max-w-6xl items-center justify-center px-6 md:min-h-screen md:px-8"
   >
     <div className="flex w-full flex-col items-center text-center">
 
       <p
-        className={`${cormorant.className} mb-8 text-lg uppercase tracking-[0.5em] text-amber-400 md:text-2xl`}
+        className={`${cormorant.className} mb-6 text-sm uppercase tracking-[0.35em] text-amber-400 md:mb-8 md:text-2xl md:tracking-[0.5em]`}
       >
         CALLED TO IGNITE NATIONS
       </p>
 
       <h1
-        className={`${cormorant.className} whitespace-nowrap text-5xl font-semibold tracking-[0.08em] text-white md:text-[4.5rem]`}
+        className={`${cormorant.className} text-3xl font-semibold tracking-[0.08em] text-white md:text-[4.5rem]`}
       >
         PROPHETIC EVANGELIST
       </h1>
 
       <h2
-        className={`${cormorant.className} mt-4 whitespace-nowrap text-6xl font-bold leading-none text-amber-400 md:text-[6rem]`}
+        className={`${cormorant.className} mt-3 text-4xl font-bold leading-none text-amber-400 md:mt-4 md:text-[6rem]`}
       >
         LUKAS PUCHALSKI
       </h2>
 
-      <div className="my-8 flex items-center justify-center gap-6">
-        <div className="h-px w-20 bg-amber-500" />
-        <span className="text-xl text-amber-400">✝</span>
-        <div className="h-px w-20 bg-amber-500" />
+      <div className="my-6 flex items-center justify-center gap-4 md:my-8 md:gap-6">
+        <div className="h-px w-12 bg-amber-500 md:w-20" />
+        <span className="text-lg text-amber-400 md:text-xl">✝</span>
+        <div className="h-px w-12 bg-amber-500 md:w-20" />
       </div>
 
       <p
-        className={`${cormorant.className} mx-auto max-w-2xl text-[1.35rem] leading-[1.8] text-zinc-300`}
+        className={`${cormorant.className} mx-auto max-w-2xl text-lg leading-[1.7] text-zinc-300 md:text-[1.35rem] md:leading-[1.8]`}
       >
         Awakening a generation. Reviving the Church. Preaching Jesus Christ
         to the nations through prophetic evangelism, the power of the Holy
         Spirit, and the love of the Father.
       </p>
 
-      <div className="mt-12 flex flex-wrap justify-center gap-5">
+      <div className="mt-10 flex w-full flex-col gap-4 px-4 sm:w-auto sm:flex-row md:mt-12">
 
-        <button className="rounded-xl bg-amber-500 px-10 py-4 text-base font-semibold text-black transition hover:bg-amber-400">
+        <button className="rounded-xl bg-amber-500 px-8 py-4 text-base font-semibold text-black transition hover:bg-amber-400 md:px-10">
           Invite Lukas
         </button>
 
-        <button className="rounded-xl border border-amber-500 px-10 py-4 text-base transition hover:bg-amber-500 hover:text-black">
+        <button className="rounded-xl border border-amber-500 px-8 py-4 text-base transition hover:bg-amber-500 hover:text-black md:px-10">
           Watch Messages
         </button>
 
@@ -106,45 +120,49 @@ export default function Home() {
   </motion.div>
 
 </section>
- {/* ABOUT */}
+{/* ABOUT */}
 
 <section
   id="about"
-  className="relative overflow-hidden bg-black px-8 py-28 text-white"
+  className="relative overflow-hidden bg-black px-6 py-24 text-white md:px-8 md:py-32"
 >
   <div className="absolute left-1/3 top-1/2 h-[800px] w-[800px] -translate-y-1/2 rounded-full bg-amber-500/15 blur-[220px]" />
 
-  <div className="relative mx-auto grid max-w-[1400px] gap-16 lg:grid-cols-[0.9fr_1.1fr]">
+  <div className="relative mx-auto grid max-w-[1500px] items-start justify-center gap-20 lg:grid-cols-[700px_600px]">
+
+    {/* IMAGE */}
 
     <motion.div
       initial={{ opacity: 0, x: -100 }}
       whileInView={{ opacity: 1, x: 0 }}
       viewport={{ once: true, amount: 0.3 }}
       transition={{ duration: 1.2 }}
-      className="self-start"
+      className="flex justify-center lg:justify-start"
     >
       <img
         src="/lukas.jpg"
         alt="Lukas Puchalski"
-        className="w-full max-w-[560px] rounded-[24px] border border-amber-500/20 shadow-[0_0_80px_rgba(245,158,11,0.25)]"
+        className="w-full max-w-[680px] rounded-[28px] border border-amber-500/20 shadow-[0_0_80px_rgba(245,158,11,0.25)]"
       />
     </motion.div>
+
+    {/* TEXT */}
 
     <motion.div
       initial={{ opacity: 0, x: 100 }}
       whileInView={{ opacity: 1, x: 0 }}
       viewport={{ once: true, amount: 0.3 }}
       transition={{ duration: 1.2 }}
-      className="self-start"
+      className="w-full max-w-[600px]"
     >
       <p
-        className={`${cormorant.className} mb-6 uppercase tracking-[0.35em] text-amber-400 text-lg md:text-xl`}
+        className={`${cormorant.className} mb-5 uppercase tracking-[0.35em] text-amber-400 text-lg md:text-xl`}
       >
         ABOUT LUKAS
       </p>
 
       <h2
-        className={`${cormorant.className} mb-10 text-white font-bold leading-[0.95] tracking-[0.01em] text-5xl md:text-[5rem]`}
+        className={`${cormorant.className} mb-10 font-bold leading-[0.95] tracking-[0.01em] text-white text-6xl md:text-7xl xl:text-[6rem]`}
       >
         A Voice For This
         <br />
@@ -152,7 +170,7 @@ export default function Home() {
       </h2>
 
       <p
-        className={`${cormorant.className} mb-6 text-[1.35rem] leading-[1.8] text-zinc-300`}
+        className={`${cormorant.className} mb-7 text-[1.5rem] leading-[1.9] text-zinc-300`}
       >
         Lukas is a prophetic evangelist carrying a burning message of revival,
         identity, and the Father's love for this generation. Marked by a
@@ -161,7 +179,7 @@ export default function Home() {
       </p>
 
       <p
-        className={`${cormorant.className} mb-6 text-[1.35rem] leading-[1.8] text-zinc-300`}
+        className={`${cormorant.className} mb-7 text-[1.5rem] leading-[1.9] text-zinc-300`}
       >
         Through prophetic evangelism, the power of the Holy Spirit, and the
         love of the Father, Lukas ministers with a passion to see hearts
@@ -169,7 +187,7 @@ export default function Home() {
       </p>
 
       <p
-        className={`${cormorant.className} mb-6 text-[1.35rem] leading-[1.8] text-zinc-300`}
+        className={`${cormorant.className} mb-7 text-[1.5rem] leading-[1.9] text-zinc-300`}
       >
         His heart burns for a generation lost in confusion, pain, addiction,
         and fatherlessness — raising sons and daughters who know their
@@ -177,16 +195,17 @@ export default function Home() {
       </p>
 
       <p
-        className={`${cormorant.className} text-[1.35rem] leading-[1.8] font-semibold text-amber-400`}
+        className={`${cormorant.className} mb-10 text-[1.5rem] font-semibold leading-[1.9] text-amber-400`}
       >
         His vision is clear: to see nations awakened, churches revived, and a
         generation arise carrying the fire, purity, power, and love of Jesus
         Christ.
       </p>
 
-      <button className="mt-10 rounded-lg border border-amber-500 px-7 py-3 text-amber-400 transition hover:bg-amber-500 hover:text-black">
+      <button className="rounded-xl border border-amber-500 px-8 py-4 text-lg text-amber-400 transition hover:bg-amber-500 hover:text-black">
         Read My Story
       </button>
+
     </motion.div>
 
   </div>
@@ -194,103 +213,106 @@ export default function Home() {
 {/* STORY */}
 
 <section
-  id="story"className="relative overflow-hidden bg-black px-8 py-28 text-white"
+  id="story"
+  className="relative overflow-hidden bg-black px-6 py-20 text-white md:px-8 md:py-24"
 >
   <div className="absolute left-1/2 top-1/2 h-[1000px] w-[1000px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-amber-500/10 blur-[250px]" />
 
-  <div className="relative mx-auto max-w-[1600px]">
+  <div className="relative mx-auto max-w-[1500px]">
 
-
-<motion.div
-  initial={{ opacity: 0, y: 120 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  viewport={{ once: true, amount: 0.3 }}
-  transition={{ duration: 1.2 }}
->
- <p
-  className={`${cormorant.className} mb-6 text-center uppercase tracking-[0.35em] text-amber-400 text-lg md:text-xl`}
->
-  THE STORY
-</p>
-
-<h2
-  className={`${cormorant.className} mb-16 text-center font-bold text-white text-5xl md:text-[5rem] leading-[0.95]`}
->
-  From Darkness To Light
-</h2>
-</motion.div>
-
-<div className="mx-auto grid max-w-[1400px] items-center gap-16 lg:grid-cols-[0.9fr_1.1fr]">
-
-  <motion.div
-    initial={{ opacity: 0, x: -100 }}
-    whileInView={{ opacity: 1, x: 0 }}
-    viewport={{ once: true, amount: 0.3 }}
-    transition={{ duration: 1.2 }}
-  >
-    <img
-      src="/story.jpg"
-      alt="From Darkness To Light"
-      className="w-full max-w-[560px] rounded-[24px] border border-amber-500/20 shadow-[0_0_80px_rgba(245,158,11,0.25)]"
-    />
-  </motion.div>
-
-  <motion.div
-    initial={{ opacity: 0, x: 100 }}
-    whileInView={{ opacity: 1, x: 0 }}
-    viewport={{ once: true, amount: 0.3 }}
-    transition={{ duration: 1.2 }}
-  >
-    <p
-      className={`${cormorant.className} mb-6 text-[1.35rem] leading-[1.8] text-zinc-300`}
+    <motion.div
+      initial={{ opacity: 0, y: 120 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.3 }}
+      transition={{ duration: 1.2 }}
     >
-      Lukas grew up in a broken family without siblings, in a Polish nation
-      marked by deep historical trauma — from the partitions of Poland,
-      to the devastation of world wars, and the oppression of the
-      communist regime.
-    </p>
+      <p
+        className={`${cormorant.className} mb-5 text-center uppercase tracking-[0.35em] text-amber-400 text-lg md:text-xl`}
+      >
+        THE STORY
+      </p>
 
-    <p
-      className={`${cormorant.className} mb-6 text-[1.35rem] leading-[1.8] text-zinc-300`}
-    >
-      Darkness slowly started consuming him, and throughout his life he
-      became a lost sheep in a world of wolves, while at the same time
-      becoming a wolf himself. Yet deep within the darkness, there was still
-      a wounded and forgotten child crying out for true purpose, identity,
-      and love.
-    </p>
+      <h2
+        className={`${cormorant.className} mb-14 text-center font-bold text-white text-5xl leading-[0.95] md:text-7xl`}
+      >
+        From Darkness To Light
+      </h2>
+    </motion.div>
 
-    <p
-      className={`${cormorant.className} mb-6 text-[1.35rem] leading-[1.8] text-zinc-300`}
-    >
-      From a life marked by crime, addiction, destruction, and prisons in
-      three different countries, God radically transformed his life from
-      darkness to light. What the enemy meant for death, God turned into
-      redemption, purpose, and fire for the Kingdom of God.
-    </p>
+    <div className="mx-auto grid items-center justify-center gap-20 lg:grid-cols-[520px_600px]">
 
-    <p
-      className={`${cormorant.className} text-[1.35rem] leading-[1.8] font-semibold text-amber-400`}
-    >
-      Today, his life stands as a testimony that no one is too far gone for
-      the mercy, healing, and transforming power of Jesus Christ.
-    </p>
+      {/* IMAGE */}
 
-    <a href="#testimony">
-      <button className="mt-10 rounded-lg bg-amber-500 px-7 py-3 font-semibold text-black transition hover:bg-amber-400">
-        Watch Testimony
-      </button>
-    </a>
+      <motion.div
+        initial={{ opacity: 0, x: -100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 1.2 }}
+        className="flex justify-center"
+      >
+        <img
+          src="/story.jpg"
+          alt="From Darkness To Light"
+          className="w-full max-w-[520px] rounded-[24px] border border-amber-500/20 shadow-[0_0_80px_rgba(245,158,11,0.25)]"
+        />
+      </motion.div>
 
-  </motion.div>
+      {/* TEXT */}
 
-</div>
-```
+      <motion.div
+        initial={{ opacity: 0, x: 100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 1.2 }}
+        className="w-full max-w-[600px]"
+      >
+        <p
+          className={`${cormorant.className} mb-7 text-[1.45rem] leading-[1.9] text-zinc-300`}
+        >
+          Lukas grew up in a broken family without siblings, in a Polish nation
+          marked by deep historical trauma — from the partitions of Poland,
+          to the devastation of world wars, and the oppression of the
+          communist regime.
+        </p>
+
+        <p
+          className={`${cormorant.className} mb-7 text-[1.45rem] leading-[1.9] text-zinc-300`}
+        >
+          Darkness slowly started consuming him, and throughout his life he
+          became a lost sheep in a world of wolves, while at the same time
+          becoming a wolf himself. Yet deep within the darkness, there was still
+          a wounded and forgotten child crying out for true purpose,
+          identity, and love.
+        </p>
+
+        <p
+          className={`${cormorant.className} mb-7 text-[1.45rem] leading-[1.9] text-zinc-300`}
+        >
+          From a life marked by crime, addiction, destruction, and prisons in
+          three different countries, God radically transformed his life from
+          darkness to light. What the enemy meant for death, God turned into
+          redemption, purpose, and fire for the Kingdom of God.
+        </p>
+
+        <p
+          className={`${cormorant.className} mb-10 text-[1.45rem] font-semibold leading-[1.9] text-amber-400`}
+        >
+          Today, his life stands as a testimony that no one is too far gone for
+          the mercy, healing, and transforming power of Jesus Christ.
+        </p>
+
+        <a href="#testimony">
+          <button className="rounded-xl bg-amber-500 px-8 py-4 text-lg font-semibold text-black transition hover:bg-amber-400">
+            Watch Testimony
+          </button>
+        </a>
+
+      </motion.div>
+
+    </div>
 
   </div>
 </section>
-
-
 {/* MISSION */}
 <section
   id="mission"
@@ -450,7 +472,7 @@ export default function Home() {
 
 <section
   id="covering"
-  className="relative overflow-hidden bg-black px-8 py-28 text-white"
+  className="relative overflow-hidden bg-black px-6 py-20 text-white md:px-8 md:py-24"
 >
   <div className="absolute left-1/2 top-1/2 h-[800px] w-[800px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-amber-500/10 blur-[220px]" />
 
@@ -463,27 +485,27 @@ export default function Home() {
       transition={{ duration: 1 }}
     >
       <p
-        className={`${cormorant.className} mb-6 text-center uppercase tracking-[0.35em] text-amber-400 text-lg md:text-xl`}
+        className={`${cormorant.className} mb-5 text-center uppercase tracking-[0.35em] text-amber-400 text-lg md:text-xl`}
       >
-        SPIRITUAL COVERING & DISCIPLESHIP
+        SPIRITUAL COVERING
       </p>
 
-     <h2
-  className={`${cormorant.className} mb-10 text-center font-bold text-white text-6xl md:text-[5.5rem] leading-[0.95]`}
->
-  Spiritual Covering{" "}
-  <span className="text-amber-400">&</span>{" "}
-  Discipleship
-</h2>
-     <p
-  className={`${cormorant.className} mb-14 text-center text-2xl md:text-3xl font-semibold`}
->
-  <span className="text-white">Inspired. </span>
-  
-  <span className="text-white">Equipped. </span>
-  
-  <span className="text-amber-400">Activated. </span>
-</p>
+      <h2
+        className={`${cormorant.className} mb-8 text-center font-bold text-white text-5xl md:text-[5.5rem] leading-[0.95]`}
+      >
+        Discipled.
+        <br />
+        Equipped.
+        <span className="text-amber-400"> Sent.</span>
+      </h2>
+
+      <p
+        className={`${cormorant.className} mb-14 text-center text-2xl md:text-3xl font-semibold`}
+      >
+        <span className="text-white">Rooted in Christ. </span>
+        <span className="text-white">Equipped for Ministry. </span>
+        <span className="text-amber-400">Sent to the Nations.</span>
+      </p>
     </motion.div>
 
     <motion.div
@@ -491,10 +513,10 @@ export default function Home() {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.3 }}
       transition={{ duration: 1.2 }}
-      className="mx-auto max-w-5xl text-center"
+      className="mx-auto max-w-4xl text-center"
     >
       <p
-        className={`${cormorant.className} mb-8 text-[1.35rem] leading-[1.8] text-zinc-300`}
+        className={`${cormorant.className} mb-8 text-[1.45rem] leading-[1.9] text-zinc-300`}
       >
         Lukas Puchalski is being discipled through the
 
@@ -502,12 +524,27 @@ export default function Home() {
           {" "}YESURN1 Discipleship Program under Prophet Evangelist Alex Shore-Nye{" "}
         </span>
 
-        growing in prophetic evangelism, hearing the voice of God,
-        and ministering through the power of the Holy Spirit.
+        where he continues to grow in prophetic evangelism, hearing the
+        voice of God, biblical leadership, and ministry through the power
+        of the Holy Spirit.
       </p>
 
       <p
-        className={`${cormorant.className} mb-8 text-[1.35rem] leading-[1.8] text-zinc-300`}
+        className={`${cormorant.className} mb-8 text-[1.45rem] leading-[1.9] text-zinc-300`}
+      >
+        He is also an active member of
+
+        <span className="font-bold text-amber-400">
+          {" "}RIG Global Manila Church{" "}
+        </span>
+
+        where he continues to grow in Christian community, discipleship,
+        worship, prayer, and Kingdom culture alongside believers from
+        different nations.
+      </p>
+
+      <p
+        className={`${cormorant.className} mb-8 text-[1.45rem] leading-[1.9] text-zinc-300`}
       >
         Through discipleship, prophetic activation, and spiritual
         equipping, Lukas carries a growing burden to see believers
@@ -516,27 +553,24 @@ export default function Home() {
       </p>
 
       <p
-        className={`${cormorant.className} text-[1.35rem] leading-[1.8] text-zinc-300`}
+        className={`${cormorant.className} text-[1.45rem] leading-[1.9] text-zinc-300`}
       >
-        Lukas carries a heart to serve and strengthen the local church by
-        awakening evangelistic fire, prophetic boldness, and spiritual
-        hunger. His mission aligns with the
+        His mission aligns with the vision of
 
         <span className="font-bold text-amber-400">
-          {" "}YESURN1 Discipleship vision{" "}
+          {" "}YESURN1 Discipleship and RIG Global{" "}
         </span>
 
-        established through Prophet Evangelist Alex Shore-Nye: to proclaim
-        Jesus boldly,
+        to proclaim Jesus boldly,
 
         <span className="font-bold text-amber-400">
           {" "}equip the saints{" "}
         </span>
 
-        and
+        strengthen the local church, and
 
         <span className="font-bold text-amber-400">
-          {" "}activate the Church{" "}
+          {" "}activate believers{" "}
         </span>
 
         to carry the Gospel into the
