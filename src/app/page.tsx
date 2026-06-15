@@ -825,50 +825,7 @@ export default function Home() {
     A present calling to preach Jesus, make disciples, and reach the nations.
   </p>
 </motion.div>
-<div className="space-y-4">
-  <p
-    className={`${cormorant.className} text-2xl font-semibold text-amber-400`}
-  >
-    Email
-  </p>
 
-  <a
-    href="mailto:evangelist.lukaspuchalski@gmail.com"
-    className="text-lg text-zinc-300 transition hover:text-amber-400"
-  >
-    evangelist.lukaspuchalski@gmail.com
-  </a>
-</div>
-
-<div className="mt-8 space-y-4">
-  <p
-    className={`${cormorant.className} text-2xl font-semibold text-amber-400`}
-  >
-    WhatsApp
-  </p>
-
-  <a
-    href="https://wa.me/31613563266"
-    className="text-lg text-zinc-300 transition hover:text-amber-400"
-  >
-    +31 613 563 266
-  </a>
-</div>
-
-<div className="mt-8 space-y-4">
-  <p
-    className={`${cormorant.className} text-2xl font-semibold text-amber-400`}
-  >
-    Viber
-  </p>
-
-  <a
-    href="viber://chat?number=%2B639945823745"
-    className="text-lg text-zinc-300 transition hover:text-amber-400"
-  >
-    +63 994 582 3745
-  </a>
-</div>
 
 </div>
 </div>   {/* koniec grid */}
@@ -880,43 +837,47 @@ export default function Home() {
 
 <section
   id="contact"
-  className="bg-black px-8 py-20 text-white"
+  className="bg-black px-6 py-16 md:px-8 md:py-20 text-white"
 >
   <div className="mx-auto max-w-6xl text-center">
 
     <p
-      className={`${cormorant.className} mb-6 uppercase tracking-[0.35em] text-amber-400 text-lg`}
+      className={`${cormorant.className} mb-4 uppercase tracking-[0.35em] text-amber-400 text-base md:text-xl`}
     >
-      CONTACT
+      INVITE LUKAS
     </p>
 
     <h2
-      className={`${cormorant.className} mb-6 text-5xl md:text-6xl font-bold`}
+      className={`${cormorant.className} mb-6 text-center font-bold text-white text-4xl md:text-7xl leading-[1]`}
     >
-      Let's Connect
+      Preaching Jesus
+      <span className="block text-amber-400">
+        To The Nations
+      </span>
     </h2>
 
     <p
-      className={`${cormorant.className} mx-auto mb-14 max-w-3xl text-xl md:text-2xl text-zinc-300`}
+      className={`${cormorant.className} mx-auto mb-12 max-w-4xl text-center text-lg md:text-2xl leading-relaxed text-zinc-300`}
     >
-      Invite Lukas for evangelism training, conferences, church events,
-      outreach missions, discipleship, and speaking engagements.
+      Available for churches, conferences, evangelism training,
+      outreach missions, discipleship schools, revival gatherings,
+      and speaking engagements.
     </p>
 
-    <div className="grid gap-8 md:grid-cols-3">
+    <div className="grid gap-5 md:grid-cols-3">
 
       {/* EMAIL */}
 
-      <div className="rounded-3xl border border-amber-500/20 bg-white/[0.02] p-8 text-center backdrop-blur">
+      <div className="rounded-3xl border border-amber-500/20 bg-white/[0.02] p-6 md:p-8 text-center backdrop-blur">
         <p
-          className={`${cormorant.className} mb-4 text-3xl font-semibold text-amber-400`}
+          className={`${cormorant.className} mb-3 text-3xl md:text-4xl font-semibold text-amber-400`}
         >
           Email
         </p>
 
         <a
           href="mailto:evangelist.lukaspuchalski@gmail.com"
-          className="text-lg text-zinc-300 transition hover:text-amber-400"
+          className="break-all text-base md:text-lg text-zinc-300 transition hover:text-amber-400"
         >
           evangelist.lukaspuchalski@gmail.com
         </a>
@@ -924,9 +885,9 @@ export default function Home() {
 
       {/* WHATSAPP */}
 
-      <div className="rounded-3xl border border-amber-500/20 bg-white/[0.02] p-8 text-center backdrop-blur">
+      <div className="rounded-3xl border border-amber-500/20 bg-white/[0.02] p-6 md:p-8 text-center backdrop-blur">
         <p
-          className={`${cormorant.className} mb-4 text-3xl font-semibold text-amber-400`}
+          className={`${cormorant.className} mb-3 text-3xl md:text-4xl font-semibold text-amber-400`}
         >
           WhatsApp
         </p>
@@ -935,7 +896,7 @@ export default function Home() {
           href="https://wa.me/31613563266"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-lg text-zinc-300 transition hover:text-amber-400"
+          className="text-base md:text-lg text-zinc-300 transition hover:text-amber-400"
         >
           +31 613 563 266
         </a>
@@ -943,16 +904,16 @@ export default function Home() {
 
       {/* VIBER */}
 
-      <div className="rounded-3xl border border-amber-500/20 bg-white/[0.02] p-8 text-center backdrop-blur">
+      <div className="rounded-3xl border border-amber-500/20 bg-white/[0.02] p-6 md:p-8 text-center backdrop-blur">
         <p
-          className={`${cormorant.className} mb-4 text-3xl font-semibold text-amber-400`}
+          className={`${cormorant.className} mb-3 text-3xl md:text-4xl font-semibold text-amber-400`}
         >
           Viber
         </p>
 
         <a
           href="viber://chat?number=%2B639945823745"
-          className="text-lg text-zinc-300 transition hover:text-amber-400"
+          className="text-base md:text-lg text-zinc-300 transition hover:text-amber-400"
         >
           +63 994 582 3745
         </a>
@@ -960,7 +921,56 @@ export default function Home() {
 
     </div>
 
-    <div className="mt-16 border-t border-white/10 pt-8">
+    {/* SOCIAL MEDIA */}
+
+    <div className="mt-16 border-t border-white/10 pt-12">
+
+      <p
+        className={`${cormorant.className} mb-8 uppercase tracking-[0.35em] text-amber-400 text-base md:text-lg`}
+      >
+        FOLLOW THE MISSION
+      </p>
+
+      <div className="grid gap-4 md:grid-cols-3">
+
+        <a
+          href="https://www.instagram.com/lukas.puchalski"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="rounded-2xl border border-amber-500/20 bg-white/[0.02] p-5 text-center transition hover:border-amber-400 hover:bg-white/[0.04]"
+        >
+          <p className={`${cormorant.className} text-2xl text-amber-400`}>
+            Instagram
+          </p>
+        </a>
+
+        <a
+          href="https://www.facebook.com/share/1CucSSNNPg/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="rounded-2xl border border-amber-500/20 bg-white/[0.02] p-5 text-center transition hover:border-amber-400 hover:bg-white/[0.04]"
+        >
+          <p className={`${cormorant.className} text-2xl text-amber-400`}>
+            Facebook
+          </p>
+        </a>
+
+        <a
+          href="https://www.tiktok.com/@fromcrimetoshine"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="rounded-2xl border border-amber-500/20 bg-white/[0.02] p-5 text-center transition hover:border-amber-400 hover:bg-white/[0.04]"
+        >
+          <p className={`${cormorant.className} text-2xl text-amber-400`}>
+            TikTok
+          </p>
+        </a>
+
+      </div>
+
+    </div>
+
+    <div className="mt-16 border-t border-white/10 pt-6">
       <p className="text-sm text-zinc-500">
         © 2026 Lukas Puchalski • Preaching Jesus to the Nations
       </p>
