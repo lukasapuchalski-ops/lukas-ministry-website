@@ -724,100 +724,100 @@ export default function Home() {
       className="rounded-3xl border border-amber-500/20 bg-white/[0.02] p-12 text-center backdrop-blur"
     >
       <p
-        className={`${cormorant.className} mb-4 uppercase tracking-[0.35em] text-amber-400 text-sm`}
-      >
-        POLAND
-      </p>
+      
+  className={`${cormorant.className} mb-4 uppercase tracking-[0.25em] md:tracking-[0.35em] text-amber-400 text-xl md:text-sm`}
+>
+  POLAND
+</p>
 
-      <div className="mx-auto mb-6 h-[2px] w-16 bg-amber-400" />
+<div className="mx-auto mb-6 h-[2px] w-16 bg-amber-400" />
 
-      <h3
-        className={`${cormorant.className} mb-4 text-5xl font-bold text-white`}
-      >
-        The Beginning
-      </h3>
+<h3
+  className={`${cormorant.className} mb-4 text-4xl md:text-5xl font-bold text-white`}
+>
+  The Beginning
+</h3>
 
-      <p
-        className={`${cormorant.className} text-xl leading-relaxed text-zinc-300`}
-      >
-        Where God began the story of redemption, identity, and calling.
-      </p>
-    </motion.div>
+<p
+  className={`${cormorant.className} text-xl leading-relaxed text-zinc-300`}
+>
+  Where God began the story of redemption, identity, and calling.
+</p>
+</motion.div>
 
-    {/* MOBILE ARROW */}
+{/* MOBILE ARROW */}
 
-    <div className="flex justify-center md:hidden">
-      <span className="text-amber-400 text-5xl animate-pulse">↓</span>
-    </div>
+<div className="flex justify-center md:hidden">
+  <span className="text-amber-400 text-6xl animate-pulse">↓</span>
+</div>
 
-    {/* GERMANY & NETHERLANDS */}
+{/* GERMANY & NETHERLANDS */}
 
-    <motion.div
-      initial={{ opacity: 0, y: 60 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 1.2 }}
-      className="rounded-3xl border border-amber-500/20 bg-white/[0.02] p-12 text-center backdrop-blur"
-    >
-      <p
-        className={`${cormorant.className} mb-4 uppercase tracking-[0.35em] text-amber-400 text-sm`}
-      >
-        GERMANY & NETHERLANDS
-      </p>
+<motion.div
+  initial={{ opacity: 0, y: 60 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true }}
+  transition={{ duration: 1.2 }}
+  className="rounded-3xl border border-amber-500/20 bg-white/[0.02] p-12 text-center backdrop-blur"
+>
+  <p
+    className={`${cormorant.className} mb-4 uppercase tracking-[0.18em] md:tracking-[0.35em] text-amber-400 text-xl md:text-sm`}
+  >
+    GERMANY & NETHERLANDS
+  </p>
 
-      <div className="mx-auto mb-6 h-[2px] w-16 bg-amber-400" />
+  <div className="mx-auto mb-6 h-[2px] w-16 bg-amber-400" />
 
-      <h3
-        className={`${cormorant.className} mb-4 text-5xl font-bold text-white`}
-      >
-        The Preparation
-      </h3>
+  <h3
+    className={`${cormorant.className} mb-4 text-4xl md:text-5xl font-bold text-white`}
+  >
+    The Preparation
+  </h3>
 
-      <p
-        className={`${cormorant.className} text-xl leading-relaxed text-zinc-300`}
-      >
-        A season of growth, transformation, and preparation for the nations.
-      </p>
-    </motion.div>
+  <p
+    className={`${cormorant.className} text-xl leading-relaxed text-zinc-300`}
+  >
+    A season of growth, transformation, and preparation for the nations.
+  </p>
+</motion.div>
 
-    {/* MOBILE ARROW */}
+{/* MOBILE ARROW */}
 
-    <div className="flex justify-center md:hidden">
-      <span className="text-amber-400 text-5xl animate-pulse">↓</span>
-    </div>
+<div className="flex justify-center md:hidden">
+  <span className="text-amber-400 text-6xl animate-pulse">↓</span>
+</div>
 
-    {/* PHILIPPINES */}
+{/* PHILIPPINES */}
 
-    <motion.div
-      initial={{ opacity: 0, y: 60 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 1.4 }}
-      className="rounded-3xl border border-amber-500/20 bg-white/[0.02] p-12 text-center backdrop-blur"
-    >
-      <p
-        className={`${cormorant.className} mb-4 uppercase tracking-[0.35em] text-amber-400 text-sm`}
-      >
-        PHILIPPINES
-      </p>
+<motion.div
+  initial={{ opacity: 0, y: 60 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true }}
+  transition={{ duration: 1.4 }}
+  className="rounded-3xl border border-amber-500/20 bg-white/[0.02] p-12 text-center backdrop-blur"
+>
+  <p
+    className={`${cormorant.className} mb-4 uppercase tracking-[0.25em] md:tracking-[0.35em] text-amber-400 text-xl md:text-sm`}
+  >
+    PHILIPPINES
+  </p>
 
-      <div className="mx-auto mb-6 h-[2px] w-16 bg-amber-400" />
+  <div className="mx-auto mb-6 h-[2px] w-16 bg-amber-400" />
 
-      <h3
-        className={`${cormorant.className} mb-4 text-5xl font-bold text-white`}
-      >
-        The Mission
-      </h3>
+  <h3
+    className={`${cormorant.className} mb-4 text-4xl md:text-5xl font-bold text-white`}
+  >
+    The Mission
+  </h3>
 
-      <p
-        className={`${cormorant.className} text-xl leading-relaxed text-zinc-300`}
-      >
-        A present calling to preach Jesus, make disciples, and reach the nations.
-      </p>
-    </motion.div>
+  <p
+    className={`${cormorant.className} text-xl leading-relaxed text-zinc-300`}
+  >
+    A present calling to preach Jesus, make disciples, and reach the nations.
+  </p>
+</motion.div>
 
-  </div>
-
+</div>
 </div>   {/* koniec grid */}
 
 </div>   {/* koniec max-w */}
