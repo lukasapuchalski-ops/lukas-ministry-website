@@ -24,28 +24,36 @@ export default function Home() {
       <span className="text-white">PUCHALSKI</span>
     </h2>
 
-    <nav className="hidden gap-8 text-sm uppercase tracking-widest md:flex">
-      <a href="#about" className="transition hover:text-amber-400">
-        About
-      </a>
+    <nav className="hidden items-center gap-10 text-sm uppercase tracking-[0.2em] md:flex">
+  <a href="#about" className="transition hover:text-amber-400">
+    About
+  </a>
 
-      <a href="#story" className="transition hover:text-amber-400">
-        Story
-      </a>
+  <a href="#story" className="transition hover:text-amber-400">
+    My Story
+  </a>
 
-      <a href="#mission" className="transition hover:text-amber-400">
-        Mission
-      </a>
+  <a href="#mission" className="transition hover:text-amber-400">
+    Mission
+  </a>
 
-      <a href="#contact" className="transition hover:text-amber-400">
-        Contact
-      </a>
-    </nav>
+  
+  <a href="#covering" className="transition hover:text-amber-400">
+    Covering
+  </a>
 
-    <button className="rounded-xl bg-amber-500 px-4 py-2 text-sm font-semibold text-black transition hover:bg-amber-400 md:px-6 md:py-3 md:text-base">
-      Invite Lukas
-    </button>
+  <a href="#journey" className="transition hover:text-amber-400">
+    Journey
+  </a>
 
+</nav>
+
+<a
+  href="#contact"
+  className="rounded-xl bg-amber-500 px-6 py-3 text-base font-semibold text-black transition hover:bg-amber-400"
+>
+  Invite Lukas
+</a>
   </div>
 </header>
  {/* HERO */}
@@ -301,7 +309,11 @@ export default function Home() {
           the mercy, healing, and transforming power of Jesus Christ.
         </p>
 
-        <a href="#testimony">
+        <a
+  href="https://www.youtube.com/watch?v=wFLGkfkf84s"
+  target="_blank"
+  rel="noopener noreferrer"
+>
           <button className="rounded-xl bg-amber-500 px-8 py-4 text-lg font-semibold text-black transition hover:bg-amber-400">
             Watch Testimony
           </button>
@@ -526,73 +538,70 @@ export default function Home() {
       className="mx-auto max-w-[1100px] text-center"
     >
       <p
-        className={`${cormorant.className} mb-8 text-[1.45rem] leading-[1.9] text-zinc-300`}
-      >
-        Lukas Puchalski is being discipled through the
+  className={`${cormorant.className} mb-8 text-[1.45rem] leading-[1.9] text-zinc-300`}
+>
+  Lukas Puchalski is being discipled through the
 
-        <span className="font-bold text-amber-400">
-          {" "}YESURN1 Discipleship Program under Prophet Evangelist Alex Shore-Nye{" "}
-        </span>
+  <span className="font-bold text-amber-400">
+    {" "}YESURN1 Discipleship Program under Prophet Evangelist Alex Shore-Nye{" "}
+  </span>
 
-        where he continues to grow in prophetic evangelism, hearing the
-        voice of God, biblical leadership, and ministry through the power
-        of the Holy Spirit.
-      </p>
+  where he continues to grow in prophetic evangelism, hearing the voice of God,
+  biblical leadership, and Spirit-led ministry.
+</p>
 
-      <p
-        className={`${cormorant.className} mb-8 text-[1.45rem] leading-[1.9] text-zinc-300`}
-      >
-        He is also an active member of
+<p
+  className={`${cormorant.className} mb-8 text-[1.45rem] leading-[1.9] text-zinc-300`}
+>
+  He is also an active member of
 
-        <span className="font-bold text-amber-400">
-          {" "}RIG Global Manila Church{" "}
-        </span>
+  <span className="font-bold text-amber-400">
+    {" "}RIG Manila Church{" "}
+  </span>
 
-        in the Philippines, a revival-focused church community committed to
-        discipleship, worship, prayer, evangelism, and Kingdom culture.
-        Through this spiritual family he continues to grow alongside believers
-        from different nations while serving the vision of seeing lives
-        transformed by Jesus Christ.
-      </p>
+  in the Philippines, an apostolic and prophetic community committed to
+  equipping believers, activating prophetic evangelism, building disciples,
+  and advancing the Kingdom of God through the power of the Holy Spirit.
+</p>
 
-      <p
-        className={`${cormorant.className} mb-8 text-[1.45rem] leading-[1.9] text-zinc-300`}
-      >
-        Through discipleship, prophetic activation, and spiritual equipping,
-        Lukas carries a growing burden to see believers awakened, equipped,
-        healed, and sent into prophetic missions with boldness, humility,
-        purity, and the love of Jesus Christ.
-      </p>
+<p
+  className={`${cormorant.className} mb-8 text-[1.45rem] leading-[1.9] text-zinc-300`}
+>
+  Through discipleship, prophetic activation, and ministry training, Lukas
+  continues to grow in his calling to preach Jesus Christ, equip believers,
+  and serve the nations with humility, boldness, and love.
+</p>
 
-      <p
-        className={`${cormorant.className} text-[1.45rem] leading-[1.9] text-zinc-300`}
-      >
-        His mission aligns with the vision of
+<p
+  className={`${cormorant.className} text-[1.45rem] leading-[1.9] text-zinc-300`}
+>
+  His mission aligns with the vision of
 
-        <span className="font-bold text-amber-400">
-          {" "}YESURN1 Discipleship and RIG Global{" "}
-        </span>
+  <span className="font-bold text-amber-400">
+    {" "}YESURN1 Discipleship and RIG Manila Church{" "}
+  </span>
 
-        to proclaim Jesus boldly,
+  to restore apostolic and prophetic foundations, raise disciples who hear
+  the voice of God,
 
-        <span className="font-bold text-amber-400">
-          {" "}equip the saints{" "}
-        </span>
+  <span className="font-bold text-amber-400">
+    {" "}equip the saints{" "}
+  </span>
 
-        strengthen the local church, and
+  for ministry, and
 
-        <span className="font-bold text-amber-400">
-          {" "}activate believers{" "}
-        </span>
+  <span className="font-bold text-amber-400">
+    {" "}activate believers{" "}
+  </span>
 
-        to carry the Gospel into the
+  to carry the Gospel into the
 
-        <span className="font-bold text-amber-400">
-          {" "}streets, cities, and nations{" "}
-        </span>
+  <span className="font-bold text-amber-400">
+    {" "}streets, cities, and nations{" "}
+  </span>
 
-        through the power of the Holy Spirit.
-      </p>
+  through the power of the Holy Spirit.
+</p>
     </motion.div>
 
   </div>
@@ -816,12 +825,148 @@ export default function Home() {
     A present calling to preach Jesus, make disciples, and reach the nations.
   </p>
 </motion.div>
+<div className="space-y-4">
+  <p
+    className={`${cormorant.className} text-2xl font-semibold text-amber-400`}
+  >
+    Email
+  </p>
+
+  <a
+    href="mailto:evangelist.lukaspuchalski@gmail.com"
+    className="text-lg text-zinc-300 transition hover:text-amber-400"
+  >
+    evangelist.lukaspuchalski@gmail.com
+  </a>
+</div>
+
+<div className="mt-8 space-y-4">
+  <p
+    className={`${cormorant.className} text-2xl font-semibold text-amber-400`}
+  >
+    WhatsApp
+  </p>
+
+  <a
+    href="https://wa.me/31613563266"
+    className="text-lg text-zinc-300 transition hover:text-amber-400"
+  >
+    +31 613 563 266
+  </a>
+</div>
+
+<div className="mt-8 space-y-4">
+  <p
+    className={`${cormorant.className} text-2xl font-semibold text-amber-400`}
+  >
+    Viber
+  </p>
+
+  <a
+    href="viber://chat?number=%2B639945823745"
+    className="text-lg text-zinc-300 transition hover:text-amber-400"
+  >
+    +63 994 582 3745
+  </a>
+</div>
 
 </div>
 </div>   {/* koniec grid */}
 
 </div>   {/* koniec max-w */}
 
+</section>
+{/* CONTACT */}
+
+<section
+  id="contact"
+  className="bg-black px-8 py-20 text-white"
+>
+  <div className="mx-auto max-w-6xl text-center">
+
+    <p
+      className={`${cormorant.className} mb-6 uppercase tracking-[0.35em] text-amber-400 text-lg`}
+    >
+      CONTACT
+    </p>
+
+    <h2
+      className={`${cormorant.className} mb-6 text-5xl md:text-6xl font-bold`}
+    >
+      Let's Connect
+    </h2>
+
+    <p
+      className={`${cormorant.className} mx-auto mb-14 max-w-3xl text-xl md:text-2xl text-zinc-300`}
+    >
+      Invite Lukas for evangelism training, conferences, church events,
+      outreach missions, discipleship, and speaking engagements.
+    </p>
+
+    <div className="grid gap-8 md:grid-cols-3">
+
+      {/* EMAIL */}
+
+      <div className="rounded-3xl border border-amber-500/20 bg-white/[0.02] p-8 text-center backdrop-blur">
+        <p
+          className={`${cormorant.className} mb-4 text-3xl font-semibold text-amber-400`}
+        >
+          Email
+        </p>
+
+        <a
+          href="mailto:evangelist.lukaspuchalski@gmail.com"
+          className="text-lg text-zinc-300 transition hover:text-amber-400"
+        >
+          evangelist.lukaspuchalski@gmail.com
+        </a>
+      </div>
+
+      {/* WHATSAPP */}
+
+      <div className="rounded-3xl border border-amber-500/20 bg-white/[0.02] p-8 text-center backdrop-blur">
+        <p
+          className={`${cormorant.className} mb-4 text-3xl font-semibold text-amber-400`}
+        >
+          WhatsApp
+        </p>
+
+        <a
+          href="https://wa.me/31613563266"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-lg text-zinc-300 transition hover:text-amber-400"
+        >
+          +31 613 563 266
+        </a>
+      </div>
+
+      {/* VIBER */}
+
+      <div className="rounded-3xl border border-amber-500/20 bg-white/[0.02] p-8 text-center backdrop-blur">
+        <p
+          className={`${cormorant.className} mb-4 text-3xl font-semibold text-amber-400`}
+        >
+          Viber
+        </p>
+
+        <a
+          href="viber://chat?number=%2B639945823745"
+          className="text-lg text-zinc-300 transition hover:text-amber-400"
+        >
+          +63 994 582 3745
+        </a>
+      </div>
+
+    </div>
+
+    <div className="mt-16 border-t border-white/10 pt-8">
+      <p className="text-sm text-zinc-500">
+        © 2026 Lukas Puchalski • Preaching Jesus to the Nations
+      </p>
+    </div>
+
+  </div>
 </section>
 
 </main>
